@@ -101,7 +101,7 @@ body {
         border-radius: 8px;
         background: #eee;
         padding: 8px;
-        width: 100px;
+        width: 120px;
         font-weight: bold;
         font-size: 14px;
     }
@@ -124,6 +124,7 @@ body {
         font-weight: 900;
         font-size: 24px;
         line-height: 1;
+        margin-bottom: 10px;
         text-align: center;
     }
 
@@ -198,4 +199,56 @@ body {
         flex: auto;
         justify-content: flex-end;
         width: 500px;
+    }
+
+/* 4. Sign up */
+
+    /* Sign up section - flex container (row), padding, gap, center horizontally and vertically */
+    .sign-up {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 10px;
+        background-color: hsl(147 35% 94%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Call block - flex container (column), style */
+    .call {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+        width: 400px;
+    }
+
+    /* Cal title and subtext - styles */
+    .call-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .call-subtext {
+        font-size: 16px;
+    }
+
+    /* Button can have same style as the one in the Header section */
+
+/* 5. Footer */
+
+    /* Footer section - style, flex container (row), center horizontally and vertically, push to bottom of screen */
+    .footer {
+        background: teal;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: auto;
     }
