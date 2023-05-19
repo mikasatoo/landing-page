@@ -1,5 +1,3 @@
-# landing-page
+# Landing Page
 
-This a practice project to bring together the basic skills learnt across the HTML Foundations, CSS Foundations, and Flexbox sections of The Odin Project.
-
-The landing page will be constructed for the (imaginary) Nook Inc. website.
+This is a landing page created for the Nook Inc. website, built using the learnings from the HTML Foundations, CSS Foundations, and Flexbox sections of The Odin Project Foundations Course.
