@@ -9,7 +9,7 @@ body {
 
 /* 1. Header section */
 
-    /* Header section - style, flex container (column) */
+    /* Header section - style, flex container (column), set min height, center content vertically */
     .header {
         background-color: teal;
         display: flex;
@@ -17,6 +17,8 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 30px;
+        min-height: 400px;
+        justify-content: center;
     }
 
     /* Hero main text - style */
@@ -46,12 +48,13 @@ body {
         padding: 0;
     }
 
-    /* Header row - flex container (row), push apart, center vertically, padding */
+    /* Header row - flex container (row), push apart, center vertically, padding, push to top of screen */
     .header-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        margin-bottom: auto;
     }
 
     /* Links - flex container (row), gap between links, center vertically */
@@ -108,7 +111,7 @@ body {
 
 /* 2. Random information */
 
-    /* Random section - flex container (column), padding */
+    /* Random section - flex container (column), padding, min height, center content vertically */
     .random {
         display: flex;
         flex-direction: column;
@@ -117,6 +120,8 @@ body {
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: hsl(147 35% 94%);
+        min-height: 400px;
+        justify-content: center;
     }
 
     /* Random title - style */
@@ -124,7 +129,7 @@ body {
         font-weight: 900;
         font-size: 24px;
         line-height: 1;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -165,7 +170,7 @@ body {
 
 /* 3. Quote */
 
-    /* Quote section - flex container (column), padding, gap, center horizontally and vertically */
+    /* Quote section - flex container (column), padding, gap, center content horizontally and vertically, min height */
     .quote {
         display: flex;
         flex-direction: column;
@@ -173,24 +178,27 @@ body {
         padding-right: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
-        gap: 10px;
+        gap: 20px;
         background-color: #f8eebc;
         justify-content: center;
         align-items: center;
+        min-height: 200px;
     }
 
-    /* Quote text - style, flex container (row), align to left, width */
+    /* Quote text - style, flex container (row), align to left and bottom, width and max width */
     .quote-text {
         font-style: italic;
         font-size: 24px;
         text-align: start;
         display: flex;
         justify-content: flex-start;
+        align-items: flex-end;
         flex: auto;
-        width: 500px;
+        width: 50%;
+        max-width: 500px;
     }
 
-    /* Quote source - style, flex container (row), align to right, width */
+    /* Quote source - style, flex container (row), align to right and top, width and max width */
     .quote-source {
         font-size: 18px;
         font-weight: bold;
@@ -198,12 +206,14 @@ body {
         display: flex;
         flex: auto;
         justify-content: flex-end;
-        width: 500px;
+        align-items: flex-start;
+        width: 50%;
+        max-width: 500px;
     }
 
 /* 4. Sign up */
 
-    /* Sign up section - flex container (row), padding, gap, center horizontally and vertically */
+    /* Sign up section - flex container (row), padding, gap, center horizontally and vertically, min height */
     .sign-up {
         display: flex;
         padding-left: 20px;
@@ -214,6 +224,7 @@ body {
         background-color: hsl(147 35% 94%);
         justify-content: center;
         align-items: center;
+        min-height: 200px;
     }
 
     /* Call block - flex container (column), style */
@@ -226,7 +237,7 @@ body {
         width: 400px;
     }
 
-    /* Cal title and subtext - styles */
+    /* Call title and subtext - styles */
     .call-title {
         font-weight: bold;
         font-size: 18px;
@@ -251,4 +262,62 @@ body {
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: auto;
+    }
+
+/* Construction page */
+
+    /* Construction section - flex container, fill empty space, gap, center content horizontally and vertically */
+    .construction {
+        display: flex;
+        flex: 1;
+        gap: 40px;
+        background-color: #f8eebc;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Image on page - size */
+    .construction img {
+        height: 200px;
+        width: auto;
+    }
+
+    /* Construction message block - flex container (column), style, size */
+    .construction-message {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+        width: 50%;
+        max-width: 600px;
+        font-size: 18px;
+    }
+
+    /* Options block - flex container (column), align content to the left, gap, size */
+    .options {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 10px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* bold text - change colour */
+    b {
+        color: rgb(0, 183, 255);
+    }
+
+    /* Buttons - style (a bit different to index.html page) */
+    .options button {
+        width: 200px;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        background: #eee;
+        padding: 8px;
+        font-weight: bold;
+        font-size: 14px;
     }
