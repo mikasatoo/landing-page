@@ -27,5 +27,17 @@
         <div class="footer">
             Copyright © Nook Inc. 2023
         </div>
+
+        <script>
+            // JavaScript code for a donation pop-up (need to make it only for the "sure" button)
+            const button = document.querySelector("button");
+
+            function donate() {
+                const amount = prompt("How much would you like to donate?");
+                alert(`Do you want to donate ${amount} Bells?`);
+            }
+
+            button.addEventListener("click", donate);
+        </script>
     </body>
 </html>
