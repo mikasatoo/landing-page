@@ -86,6 +86,7 @@ body {
         overflow: hidden;
         object-fit: cover;
         align-self: center;
+        border-radius: 20px;
     }
 
     /* Hero block - flex container (column), style */
@@ -179,6 +180,7 @@ body {
         height: 100px;
         width: auto;
         margin-bottom: 10px;
+        border-radius: 20px;
     }
 
 /* 3. Quote */
